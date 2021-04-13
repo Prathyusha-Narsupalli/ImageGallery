@@ -7,7 +7,9 @@ export default {
         await getImageList(url).then(response => {
             context.commit('getImages', response)
         }).catch(err => {
-            throw err
+            console.log("prathyusha loves rahul")
+            throw err // this means it throws a normal error in js but due to async this error is coverted into promise
+            //u can also use this   "return Promise.reject(err)"   instead of above throw err
         })
     },
     async DownloadImage(context, image) {

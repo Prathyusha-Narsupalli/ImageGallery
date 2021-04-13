@@ -42,7 +42,7 @@
 </template>
 
 <script>
-import { mapGetters, mapMutations } from "vuex";
+import { mapGetters, mapMutations } from "vuex"
 
 export default {
   name: "ImageList",
@@ -52,8 +52,8 @@ export default {
       error:null
     };
   },
-  created() {
-    this.$store.dispatch("getImages", this.getpageUrl).catch(err => { this.error=err})
+created() {
+   this.$store.dispatch("getImages", this.getpageUrl).catch(err => { this.error=err })
   },
   computed: {
     ...mapGetters({
@@ -69,10 +69,10 @@ export default {
       previous: "previousPage",
     }),
     imageSize(image) {
-      return image.download_url.substring(0, 24) + "/" + image.id + "/272";
+      return image.download_url.substring(0, 24) + "/" + image.id + "/272"
     },
     scrollUp() {
-      window.scrollTo(0, 0);
+      window.scrollTo(0, 0)
     },
   },
   watch: {
