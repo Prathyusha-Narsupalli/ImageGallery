@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  loading: true,
+  name:"ErrorPage"
 };
 </script>
 

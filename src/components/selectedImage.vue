@@ -14,7 +14,7 @@
     <center>
       <img :src=imageSize(image) class="img-thumbnail display" />
       <br />
-      <h3 @click="author(image.url)">
+      <h3 @click="author(image.url)" id="test-author">
         Author: <b>{{ image.author }}</b>
       </h3>
       <h3>

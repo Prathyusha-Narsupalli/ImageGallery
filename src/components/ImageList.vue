@@ -7,8 +7,7 @@
         <h5>Limit: {{ limit }}</h5>
       </div>
       <b-container center>
-        <b-form-input type="number" @input="changelimit" v-model.number="limit" placeholder="Enter number of images u want to see">
-        </b-form-input>
+        <input type="number" id="limit" @input="changelimit(limit)" v-model.number="limit" placeholder="Enter number of images u want to see" />
       </b-container>
 
       <div class="row">
@@ -24,7 +23,7 @@
       </div>
 
       <div class="page-buttons">
-        <b-button variant="primary" :disabled="pageNumber <= 1" @click="previous(); scrollUp();">
+        <b-button variant="primary" id="prev" :disabled="pageNumber <= 1" @click="previous(); scrollUp();">
           <b>Previous</b>
         </b-button>
         <b-button variant="primary" id="next" @click="next(); scrollUp();">

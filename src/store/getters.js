@@ -11,9 +11,6 @@ export default {
     },
     getImageById(state) {
         return state.image
-    },
-    getError(state){
-        return state.error
     }
 
 }

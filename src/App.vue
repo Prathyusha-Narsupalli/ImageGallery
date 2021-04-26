@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <b-navbar toggleable="sm" type="dark" variant="dark">
       <b-navbar-brand href="#"><b><i>Image Gallery</i></b></b-navbar-brand>
 
@@ -32,14 +32,6 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
 .route {
   font-weight: bold;
