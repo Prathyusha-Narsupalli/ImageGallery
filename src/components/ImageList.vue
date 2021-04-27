@@ -7,7 +7,7 @@
         <h5>Limit: {{ limit }}</h5>
       </div>
       <b-container center>
-        <input type="number" id="limit" @input="changelimit(limit)" v-model.number="limit" placeholder="Enter number of images u want to see" />
+        <input type="text" id="limit" @input="changelimit(limit)" v-model.number="limit" placeholder="Enter number of images u want to see" />
       </b-container>
 
       <div class="row">
@@ -104,5 +104,8 @@ created() {
   text-align: center;
   padding-bottom: 10px;
   color: black;
+}
+#limit{
+  width:100%;
 }
 </style>
