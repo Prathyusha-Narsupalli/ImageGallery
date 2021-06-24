@@ -8,7 +8,7 @@
     <div class="card-body">
       <center>
         <h3 class="card-text">This Page Doesn't Exist</h3>
-        <b-button pill variant="info" to="/">kkkkkkkkkkkkkkkkkkkkkkkk</b-button>
+        <b-button pill variant="info" to="/">Home page</b-button>
       </center>
     </div>
   </div>
